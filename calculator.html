@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title> Calculator App - Mekala</title>
+		<script type="text/javascript" src="angular.js"></script>
+		<script src="app.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+		<link rel="stylesheet" href="style.css">
+	</head>
+
+	<body ng-app="calculator">
+		<h1>Calculator - Basic operations</h1>
+		<div ng-controller="Cntrl_cal as cal" class="container">
+			<table>
+				<tr>
+					<td><p>Input 1</p></td>
+					<td>
+						<input type="number" class="form-control" aria-label="..." ng-model="cal.input1">
+					</td>
+				</tr>
+				<tr>
+					<td><p>Input 2</p></td>
+					<td>
+						<input type="number" class="form-control" aria-label="..." ng-model="cal.input2">
+					</td>
+				</tr>
+				<tr>
+					<td><p>Output</p></td>
+					<td>
+						<input type="number" class="form-control" aria-label="..." ng-model="cal.output">
+					</td>
+				</tr>
+				<tr>
+					<td><p>Choose Operations</p></td>
+					<td>
+						<button class="btn btn-success btn-md" ng-click="cal.addition()">+</button>
+						<button class="btn btn-success btn-md" ng-click="cal.subtraction()">-</button>
+						<button class="btn btn-success btn-md" ng-click="cal.multiply()">*</button>
+						<button class="btn btn-success btn-md" ng-click="cal.division()">/</button>
+					</td>
+				</tr>
+			</table>
+		</div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	</body>
+
+</html>
